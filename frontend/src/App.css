@@ -13,3 +13,53 @@ body { font-family: sans-serif; }
 .chat-input { display: flex; padding: 10px; border-top: 1px solid #ccc; }
 .chat-input input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
 .chat-input button { margin-left: 8px; padding: 8px 12px; background: #007bff; color: white; border: none; cursor: pointer; border-radius: 4px;}
+/* src/App.css 파일 맨 아래에 추가 */
+
+/* 로딩 인디케이터 스타일 */
+.loading-indicator {
+  text-align: center;
+  color: #888;
+  padding: 10px;
+  font-style: italic;
+}
+
+/* 크기 조절 핸들 스타일 */
+.resize-handle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  cursor: nwse-resize;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+
+/* 채팅 메시지를 말풍선처럼 보이게 하는 스타일 */
+.message-bubble {
+  padding: 8px 12px;
+  border-radius: 18px;
+  margin-bottom: 8px;
+  max-width: 85%;
+  word-wrap: break-word;
+}
+
+.message-bubble.user {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end; /* 오른쪽 정렬 */
+  margin-left: auto;
+}
+
+.message-bubble.bot {
+  background-color: #f1f0f0;
+  color: black;
+  align-self: flex-start; /* 왼쪽 정렬 */
+}
+
+/* chat-box가 flexbox로 자식 요소를 정렬하도록 수정 */
+.chat-box {
+  display: flex;
+  flex-direction: column;
+}
