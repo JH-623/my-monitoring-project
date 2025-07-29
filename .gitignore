@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+dist/
+build/
+.npm/
+
+# Logs & Environment
+nohup.out
+*.log
+.env
+
+# OS
+.DS_Store

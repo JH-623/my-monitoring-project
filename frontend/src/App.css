@@ -1,0 +1,15 @@
+/* src/App.css */
+body { font-family: sans-serif; }
+.App { padding: 20px; }
+.dashboard { background: #f9f9f9; padding: 20px; border-radius: 8px; }
+
+.chat-icon { position: fixed; bottom: 20px; left: 20px; width: 60px; height: 60px; background-color: #007bff; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 1000; }
+.chat-window { position: fixed; bottom: 90px; left: 20px; width: 350px; height: 450px; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column; z-index: 1000; visibility: hidden; opacity: 0; transition: opacity 0.3s, visibility 0.3s; }
+.chat-window.is-open { visibility: visible; opacity: 1; }
+.chat-header { padding: 10px; background: #f1f1f1; font-weight: bold; border-bottom: 1px solid #ccc; }
+.chat-box { flex-grow: 1; padding: 10px; overflow-y: auto; }
+.chat-box .user { text-align: right; color: blue; }
+.chat-box .bot { text-align: left; color: green; }
+.chat-input { display: flex; padding: 10px; border-top: 1px solid #ccc; }
+.chat-input input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+.chat-input button { margin-left: 8px; padding: 8px 12px; background: #007bff; color: white; border: none; cursor: pointer; border-radius: 4px;}
